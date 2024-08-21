@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task-form">
+            <h2>Add Task</h2>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" required placeholder="Enter task description">
+                </div>
+                <div class="form-group">
+                    <label for="assignee">Assigned to:</label>
+                    <input type="text" id="assignee" required placeholder="Enter assignee name">
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <input type="text" id="priority" required placeholder="Enter task priority">
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="text" id="dueDate" required placeholder="YYYY/MM/DD" pattern="\d{4}/\d{2}/\d{2}">
+                </div>
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <input type="text" id="status" required placeholder="Enter task status">
+                </div>
+                <button type="submit" id="btn">Add Task</button>
+            </form>
+        </div>
+        <div class="task-list">
+            <h2>Task List</h2>
+            <input type="text" id="search" placeholder="Search tasks...">
+            <ul id="task-list">
+                <!-- Task items will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
